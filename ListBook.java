@@ -44,7 +44,7 @@ public class ListBook {
                 wr.write(dateStr + ";" + b.Title + ";" + b.Autor + ";" + b.Year + ";" + b.Genre + ";" + b.Status + ";" + b.Rating + ";" + b.Feedback + "\n");
             }
         } catch (Exception ex) {
-            System.out.println("ERROR SAVE CONTACT");
+            System.out.println("ERROR SAVE BOOK");
             ex.printStackTrace();
         }
    }
@@ -59,7 +59,7 @@ public class ListBook {
                 this.add(date, items[1], items[2], Integer.parseInt(items[3]), items[4], Boolean.parseBoolean(items[5]), Double.parseDouble(items[6]), items[7]);
             }
         } catch (Exception ex) {
-            System.out.println("ERROR" + ex.getMessage());
+            System.out.println("ERROR " + ex.getMessage());
         }
    }
 

@@ -35,10 +35,7 @@ public class Book {
 
     }
 
-    public int compareTo(Book other) {
-        // Сортировка по названию (алфавитный порядок)
-        return this.Title.compareTo(other.Title);
-    }
+
 
     public void show() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
@@ -48,9 +45,5 @@ public class Book {
     }
 
     
-    public String toString() {
-        String statusText = Status ? "read it" : "not read";
-        return "DATE: " + Date + " NAME: " + Title + " AUTOR: " + Autor + " YEAR: " + Year + " GENRE: " + Genre + " STATUS: " + statusText + " RATING: " + Rating + " FEEDBACK: " + Feedback;
-    }
-    
+
 }
