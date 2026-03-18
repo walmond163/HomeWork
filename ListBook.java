@@ -70,8 +70,10 @@ public class ListBook {
             b.show();      
             found = true; 
             }
-        } 
-        return found;
+            } if (!found) {
+            System.out.println("Данные не найдены");
+            }
+            return found;
     }
     
     public boolean findByAutor(String autor) {
@@ -81,8 +83,10 @@ public class ListBook {
                 b.show();
                 found = true;
             }
-        } 
-        return found;
+            } if (!found) {
+            System.out.println("Данные не найдены");
+            }
+            return found;
     }
 
     public boolean findByGenre(String genre) {
@@ -92,8 +96,11 @@ public class ListBook {
                 b.show();
                 found = true;
             }
-        }
-        return found;
+            } if (!found) {
+            System.out.println("Данные не найдены");
+            }
+            return found;
+        
 
     }
 
